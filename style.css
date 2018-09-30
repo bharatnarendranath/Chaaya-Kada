@@ -43,11 +43,48 @@ img {
 }
 
 section {
-    height: calc(100vh - 8em);
+    height: calc(100vh - 2em);
     padding: 4em;
     align-items: center;
 }
 
 #order {
+    font-family: 'Rock Salt', cursive;
     text-align: center;
+    padding-top: 2em;
+}
+
+#order::first-letter {
+    font-size: 1em;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    padding-top: 1.2em;
+    line-height: 0.9em;
+}
+
+#contact {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 2em;
+    line-height: 0.9em;
+
+    text-indent: 1.2em;
+}
+
+.contact-details {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    /* font-size: 2.2em; */
+    padding-top: 1.2em;
+    /* line-height: 0.9em; */
+    text-indent: 50px;
+
+}
+
+
+ul {
+    list-style: none;
 }
