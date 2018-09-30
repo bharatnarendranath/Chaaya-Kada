@@ -8,20 +8,28 @@
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Bonbon" rel="stylesheet">
+    <link rel="stylesheet" href=".\node_modules\sal.js\dist\sal.css">
     <title>Chaaya Kada</title>
 </head>
 
 <body>
     <div class="container-fluid">
-            <nav class="navbar navbar-light justify-content-center fixed-top" style="background-color: #e3f2fd;" >
-        <!-- <nav id="nav-bar" class="navbar navbar-dark navbar-expand-lg   style style= "background-color: #e3f2fd; >   -->
-            <div>
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-primary fixed-top justify-content-md-center">
+            <a class="navbar-brand" id="logo" href="#"><img src="img/black.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Orders</a>
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -29,16 +37,30 @@
                 </ul>
             </div>
         </nav>
+    </div>
+    <section>
         <div class="row">
-            <div class="col-2">
-                <img src="img/coffee.svg" alt="logo" id="header-img">
-            </div>
-            <div class="col-10">
+            <!-- <div class="col"> -->
+            <div class="right" data-sal-duration="1200" data-sal="slide-down" data-sal-delay="300" data-sal-easing="ease-out-bounce">
                 <h1 id="header">Chaaya kada</h1>
             </div>
-        </div>
-    </div>
 
+            <div class="col-6">
+                <div class="right" data-sal-duration="1200" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease-out-bounce">
+                    <img src="img/coffee.svg" alt="logo" id="header-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <h3>Order</h3>
+        <p> dolor sit amet consectetur adipisicing elit. Ex aut nemo sequi recusandae officiis labore, debitis laborum
+            voluptatibus </p>
+    </section>
+    <script src=".\node_modules\sal.js\dist\sal.js"></script>
+    <script>
+        sal();
+    </script>
 </body>
 
 </html>
