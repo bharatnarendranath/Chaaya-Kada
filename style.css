@@ -1,0 +1,29 @@
+#nav-bar {
+    /* background-color: #ff8900 !important; */
+    /* color: white !important; */
+}
+
+.nav-link {
+    color: aliceblue !important;
+}
+
+
+#header {
+    font-family: 'Bonbon', cursive;
+    /* text-align: center; */
+    /* padding-left: 4em; */
+
+}
+
+#header::first-letter {
+    font-size: 4em;
+}
+
+#header-img {
+    position: relative;
+    padding-top: 2em;
+    padding-left: 50px;
+    display: block;
+    width: 150px;
+    /* margin: 0 auto; */
+}
